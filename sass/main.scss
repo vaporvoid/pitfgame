@@ -14,5 +14,9 @@ $custom-theme-colors: (
 
 $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 
+h1,h3,h4,h5,h6 {
+    font-family: "Georgia";
+    }
+
 // import bootstrap
 @import '../node_modules/bootstrap/scss/bootstrap';
