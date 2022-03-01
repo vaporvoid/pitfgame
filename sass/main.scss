@@ -12,13 +12,9 @@ $custom-theme-colors: (
     "altlight": brown,
 );
 
-.navbar-brand {
-    font-family: "Georgia";
-}
-
 $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 
-h1,h3,h4,h5,h6 {
+.navbar-brand,h1,h3,h4,h5,h6 {
     font-family: "Georgia";
     }
 
