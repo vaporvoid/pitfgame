@@ -11,42 +11,48 @@
 
     <!-- bootstrap integration -->
     <link href="css/main.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
 
 
 <body class="bg-light">
+
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Pumpkin in the Forest</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="story.html">Story</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="features.html">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="characters.html">Characters</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Shop</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">Meet The Team</a>
-              </li>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Pumpkin in the Forest</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="story.html">Story</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="features.html">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="characters.html">Characters</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Shop</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item " href="about.html">About Us</a></li>
+              <li><a class="dropdown-item" href="meet.html">Meet the Team</a></li>
             </ul>
-          </div>
-        </div>
-      </nav>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
     <!-- page content -->
     </br>
@@ -55,6 +61,7 @@
         Buy the game and express your love for it!
     </p>
 
+    <!-- old content for proof of concept - keeping just in case
     <p class="container text-start">
     Items (and potential items):</br></br>
 
@@ -70,15 +77,78 @@
         <div class="col"><img style="width:175px" src="images/icon.png" alt="logo"/></div>
         <div class="col"><img style="width:400px" src="images/banner.jpg" alt="banner"/></div>
         <div class="col"><img style="width:300px" src="images/characters/pumpkin.png" alt="pumpkin"/></div>
-    </div>
+    </div> 
+    -->
 
     <!-- product cards -->
     <div class="d-flex p-2 card-columns row justify-content-around align-content-around">
-      <!-- product one -->
+      <!-- product one - physical games -->
       <div class="card m-2 bg-primary" style="width:18rem">
-        <img class="card-img-top" src="images/products/one.png" alt="product one">
+        <img class="card-img-top" src="images/shop-photos/pitf_games.png" alt="the game">
         <div class="card-body">
-          <h4 class="card-title text-light">Product One</h4>
+          <h4 class="card-title text-light">Pumpkin in the Forest Physical game</h4>
+          <p class="card-text text-light">
+            <strong>Price: $40</strong></br></br>
+
+            Purchase the physical game! It is currently available on the
+            Nintendo Switch, PlayStation 4, Xbox One, and PC.
+          </p>
+        </div>
+      </div>
+      <!-- product two - OST CD -->
+      <div class="card m-2 bg-primary" style="width:18rem">
+        <img class="card-img-top" src="images/shop-photos/pitf_CD.png" alt="the cd">
+        <div class="card-body">
+          <h4 class="card-title text-light">PITF Original Soundtrack CD</h4>
+          <p class="card-text text-light">
+            <strong>Price: $12</strong></br></br>
+
+            Liked the music used in Pumpkin in the Forest? Buy the CD!
+          </p>
+        </div>
+      </div>
+      <!-- product three - pumpkin sticker -->
+      <div class="card m-2 bg-primary" style="width:18rem">
+        <img class="card-img-top" src="images/shop-photos/pitf_sticker.png" alt="pumpkin sticker">
+        <div class="card-body">
+          <h4 class="card-title text-light">Pumpkin the gerbil 5" Sticker</h4>
+          <p class="card-text text-light">
+            <strong>Price: $4</strong></br></br>
+
+            Sport a still of Pumpkin with a vinyl 5" sticker! Stick it anywhere!
+          </p>
+        </div>
+      </div>
+      <!-- product four - pitf hat -->
+      <div class="card m-2 bg-primary" style="width:18rem">
+        <img class="card-img-top" src="images/shop-photos/pitf_hat.png" alt="pumpkin hat">
+        <div class="card-body">
+          <h4 class="card-title text-light">Pumpkin the gerbil Dad hat</h4>
+          <p class="card-text text-light">
+            <strong>Price: $24</strong></br></br>
+
+            Sport a still of Pumpkin on your head! Every day!
+            Whenever you want!
+          </p>
+        </div>
+      </div>
+      <!-- product five - pitf concept art book -->
+      <div class="card m-2 bg-primary" style="width:18rem">
+        <img class="card-img-top" src="images/shop-photos/pitf_book.png" alt="pitf concept art book">
+        <div class="card-body">
+          <h4 class="card-title text-light">PITF Concept Art book</h4>
+          <p class="card-text text-light">
+            <strong>Price: $18</strong></br></br>
+
+            Love the art of Pumpkin in the Forest? Purchase the concept art book.
+          </p>
+        </div>
+      </div>
+      <!-- product six -->
+      <div class="card m-2 bg-primary" style="width:18rem">
+        <img class="card-img-top" src="images/products/six.png" alt="product six">
+        <div class="card-body">
+          <h4 class="card-title text-light">Product Six</h4>
           <p class="card-text text-light">
             <strong>Price: $$$</strong></br></br>
 
@@ -86,54 +156,7 @@
           </p>
         </div>
       </div>
-      <!-- product two -->
-      <div class="card m-2 bg-primary" style="width:18rem">
-        <img class="card-img-top" src="images/products/two.png" alt="product two">
-        <div class="card-body">
-          <h4 class="card-title text-light">Product Two</h4>
-          <p class="card-text text-light">
-            <strong>Price: $$$</strong></br></br>
 
-            Product description
-          </p>
-        </div>
-      </div>
-      <!-- product three -->
-      <div class="card m-2 bg-primary" style="width:18rem">
-        <img class="card-img-top" src="images/products/three.png" alt="product three">
-        <div class="card-body">
-          <h4 class="card-title text-light">Product Three</h4>
-          <p class="card-text text-light">
-            <strong>Price: $$$</strong></br></br>
-
-            Product description
-          </p>
-        </div>
-      </div>
-      <!-- product four -->
-      <div class="card m-2 bg-primary" style="width:18rem">
-        <img class="card-img-top" src="images/products/four.png" alt="product four">
-        <div class="card-body">
-          <h4 class="card-title text-light">Product Four</h4>
-          <p class="card-text text-light">
-            <strong>Price: $$$</strong></br></br>
-
-            Product description
-          </p>
-        </div>
-      </div>
-      <!-- product five -->
-      <div class="card m-2 bg-primary" style="width:18rem">
-        <img class="card-img-top" src="images/products/five.png" alt="product five">
-        <div class="card-body">
-          <h4 class="card-title text-light">Product Five</h4>
-          <p class="card-text text-light">
-            <strong>Price: $$$</strong></br></br>
-
-            Product description
-          </p>
-        </div>
-      </div>
     </div>
 
   <!-- to top -->
@@ -194,7 +217,6 @@
 </footer>
 
     <!-- bootstrap integration -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
