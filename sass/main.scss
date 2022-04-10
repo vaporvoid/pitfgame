@@ -2,7 +2,23 @@
 $primary: #5c3e1f;
 $light: #e2d0be;
 
+// character card dimensions
+.char-card {
+  width: 18rem;
+}
 
+// anchor hoverover color
+a {
+    -webkit-transition: color 1s;
+    transition: color 1s!important;
+}
+a:hover {
+    color: rgb(169, 155, 133)!important;
+}
+
+
+
+// carousel
 .carousel {
     position: relative;
   }
@@ -22,7 +38,6 @@ $light: #e2d0be;
     content: "";
   }
   
-  
   .carousel-item {
     position: relative;
     display: none;
@@ -38,6 +53,37 @@ $light: #e2d0be;
 .button,.btn {
     font-family: "Verdana";
     }
+
+// meet.html profiles
+.left-pfp {
+  width: 15%;
+  float: left;
+}
+.right-pfp {
+  width: 15%;
+  float: right;
+}
+
+// story.html photos
+.width28percent {
+  width: 28%;
+}
+.width24percent {
+  width: 24%;
+}
+.width20percent {
+  width: 20%;
+}
+
+.img-border {
+  border: 5px solid #5c3e1f;
+}
+
+//shop images
+.shop-img {
+  width: 400px;
+}
+
 
 //import the functions & variables
 @import '../node_modules/bootstrap/scss/_functions';
@@ -55,6 +101,11 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
     font-weight: 500;
     font-family: "Georgia";
     }
+
+// footer background
+.footer {
+  background-color: #B3A697;
+}
 
 // import bootstrap
 @import '../node_modules/bootstrap/scss/bootstrap';
