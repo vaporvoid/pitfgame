@@ -1,6 +1,7 @@
 // custom variables
 $primary: #5c3e1f;
 $light: #e2d0be;
+$info: #915509;
 
 // // header background
 // .bg-dark {
@@ -15,13 +16,16 @@ $light: #e2d0be;
 // anchor hoverover color
 a {
     -webkit-transition: color 1s;
-    transition: color 1s!important;
+    transition: color .5s!important;
 }
 a:hover {
     color: #f28f10!important;
 }
 
-
+// remove dark background color for button
+// .btn:focus {
+//   outline-color: transparent;
+// }
 
 // carousel
 .carousel {
