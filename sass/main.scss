@@ -2,6 +2,11 @@
 $primary: #5c3e1f;
 $light: #e2d0be;
 
+// // header background
+// .bg-dark {
+//   background-color: #1f381b!important;
+// }
+
 // character card dimensions
 .char-card {
   width: 18rem;
@@ -13,7 +18,7 @@ a {
     transition: color 1s!important;
 }
 a:hover {
-    color: rgb(169, 155, 133)!important;
+    color: #f28f10!important;
 }
 
 
