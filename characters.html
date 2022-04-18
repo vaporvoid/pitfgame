@@ -3,11 +3,19 @@
   <head>
     <!-- meta tags -->
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- title and favicon -->
     <title>Pumpkin in the Forest</title>
-    <link rel="icon" type="image/png" href="images/icon.png">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#e2d0be">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#b91d47">
+    <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#e2d0be">
 
     <!-- bootstrap integration -->
     <link href="css/main.min.css" rel="stylesheet">
@@ -22,56 +30,58 @@
 
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Pumpkin in the Forest</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="story.html">Story</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="features.html">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Characters</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="shop.html">Shop</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                About
-              </a>
-              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="about.html">About Us</a></li>
-                <li><a class="dropdown-item" href="meet.html">Meet the Team</a></li>
-              </ul>
-            </li>
-          </ul>
+      <a class="navbar-brand ms-3 logo-size text-center" href="index.html">
+        <script src="https://scripts.sirv.com/sirvjs/v3/sirv.js"></script>
+        <div class="figure">
+          <img class="Sirv image-main" src="images/PITF-logo-off.svg" alt="">
+          <img class="Sirv image-hover" src="images/PITF-logo-on.svg" alt="">
         </div>
+      </a>
+
+      <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto ms-3 me-3">
+          <li class="nav-item">
+            <a class="nav-link" href="story.html">Story</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="features.html">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Characters</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="shop.html">Shop</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="about.html">About Us</a></li>
+              <li><a class="dropdown-item" href="meet.html">Meet the Team</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </nav>
 
     <!-- page content -->
     <br>
-    <h1 class="text-center">Characters</h1>
-    <p class="container text-center">Meet some of the characters you will come across
-      along the way, as well as the main character.
-    </p>
+    <!-- <h1 class="text-center">Characters</h1> -->
+    <h2 class="container text-start">Meet some of the characters you will encounter on your journey,
+      as well as the main character.
+    </h2>
 
     <!-- character cards -->
     <div class="d-flex p-2 card-columns row justify-content-around align-content-around">
       <!-- pumpkin -->
-      <div class="card m-2 bg-primary" style="width:18rem">
+      <div class="card m-2 bg-warning" style="width:18rem">
         <img class="card-img-top" src="images/characters/pumpkin.png" alt="character card for pumpkin">
         <div class="card-body">
-          <h4 class="card-title text-light">Pumpkin</h4>
+          <h4 class="card-title text-light"><strong>Pumpkin</strong></h4>
           <p class="card-text text-light">
             A Mongolian gerbil; <br><br>
             Pumpkin lives by himself in a large, castle-shaped cage;
@@ -85,10 +95,10 @@
         </div>
       </div>
       <!-- toodles -->
-      <div class="card m-2 bg-primary" style="width:18rem">
+      <div class="card m-2 bg-warning" style="width:18rem">
         <img class="card-img-top" src="images/characters/toodles.png" alt="character card for toodles">
         <div class="card-body">
-          <h4 class="card-title text-light">Toodles</h4>
+          <h4 class="card-title text-light"><strong>Toodles</strong></h4>
           <p class="card-text text-light">
             A Syrian hamster, or, "Fancy Hamster";<br><br>
             She means well, though her inaction, jealousy, and
@@ -99,10 +109,10 @@
         </div>
       </div>
       <!-- rapture -->
-      <div class="card m-2 bg-primary" style="width:18rem">
+      <div class="card m-2 bg-warning" style="width:18rem">
         <img class="card-img-top" src="images/characters/rapture.png" alt="character card for rapture">
         <div class="card-body">
-          <h4 class="card-title text-light">Rapture</h4>
+          <h4 class="card-title text-light"><strong>Rapture</strong></h4>
           <p class="card-text text-light">
             A raccoon; <br><br>
             He pretends to be scary, but he's too soft. He's a kind scavenger who
@@ -112,10 +122,10 @@
         </div>
       </div>
       <!-- enigma -->
-      <div class="card m-2 bg-primary" style="width:18rem">
+      <div class="card m-2 bg-warning" style="width:18rem">
         <img class="card-img-top p-4" src="images/characters/temp-enigma.png" alt="character card for enigma">
         <div class="card-body">
-          <h4 class="card-title text-light">Enigma</h4>
+          <h4 class="card-title text-light"><strong>Enigma</strong></h4>
           <p class="card-text text-light">
             A Great Horned Owl; <br><br>
             An ill-intending foe by the name of Enigma. Enigma is a firm believer in the food chain and
@@ -190,7 +200,8 @@
 
               <!--Grid column-->
               <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase text-start">Socials</h5>
+                <h5 class="text-start"><strong>Socials</strong>
+                </h5>
 
                 <ul class="list-unstyled mb-0 text-start">
                   <li>
@@ -211,7 +222,7 @@
 
               <!--Grid column-->
               <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase text-start">Contact Us</h5>
+                <h5 class="text-start"><strong>Contact Us</strong></h5>
 
                 <ul class="list-unstyled mb-0 text-start">
                   <li>
@@ -232,7 +243,7 @@
 
               <!--Grid column-->
               <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase text-start">Legal Jargon</h5>
+                <h5 class="text-start"><strong>Legal Jargon</strong></h5>
 
                 <ul class="list-unstyled mb-0 text-start">
                   <li>
@@ -242,18 +253,18 @@
                     <a href="privacy-policy.html" target="_blank">Privacy Policy</a>
                   </li>
                   <!-- <li>
-                            <a href="#!">Link 3</a>
-                          </li>
-                          <li>
-                            <a href="#!">Link 4</a>
-                          </li> -->
+                                <a href="#!">Link 3</a>
+                              </li>
+                              <li>
+                                <a href="#!">Link 4</a>
+                              </li> -->
                 </ul>
               </div>
               <!--Grid column-->
 
               <!--Grid column-->
               <div class="col-lg-3 col-md-6 mb-4 mb-md-0 ">
-                <h5 class="text-uppercase text-start">Leaful Creations</h5>
+                <h5 class="text-start"><strong>Leaful Creations</strong></h5>
 
                 <ul class="list-unstyled mb-0 text-start">
                   <li>
