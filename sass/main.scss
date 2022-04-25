@@ -22,7 +22,12 @@ $warning: #866544;
 }
 .navbar .navbar-nav {
   margin-top: 0.001em;
-  border-top: 2px solid #000;
+  // border-top: 2px solid #000;
+}
+
+.navbar-toggler-icon{
+  transform: scale(1, 1);
+  width: auto;
 }
 
 .logo-size {
@@ -82,9 +87,16 @@ p, a, div, li {
       opacity: 1;
     }
 
-// character card dimensions
+// character card / costume dimensions
 .char-card {
   width: 18rem;
+}
+
+.costume-pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
 }
 
 // accordion colors
