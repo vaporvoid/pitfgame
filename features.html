@@ -49,7 +49,7 @@
             <a class="nav-link" href="story.html">Story</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Features</a>
+            <a class="nav-link active" aria-current="page" href="#">Features & Gameplay</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="characters.html">Characters</a>
@@ -82,12 +82,75 @@
     </p>
 
     <!-- old one -->
-    <ul class="container list-group-xs list-group-flush">
+    <!-- <ul class="container list-group-xs list-group-flush">
       <li class="list-group-item bg-light">Choose who to befriend</li>
       <li class="list-group-item bg-light">Traverse cautiously</li>
       <li class="list-group-item bg-light">Optional quests</li>
       <li class="list-group-item bg-light">More replay-ability!</li>
-    </ul>
+    </ul> -->
+
+    <!-- choices accordion -->
+    <div class="container accordion accordion-flush" id="accordionFlushChoices">
+      <!-- accordion 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOneChoices">
+          <button class="accordion-button collapsed bg-light text-black rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOneChoices" aria-expanded="false" aria-controls="flush-collapseOneChoices">
+            Choose who to befriend
+          </button>
+        </h2>
+        <div id="flush-collapseOneChoices" class="accordion-collapse collapse " aria-labelledby="flush-headingOneChoices" data-bs-parent="#accordionFlushChoices">
+          <div class="accordion-body">Many critters reside in the forest - both friendly and less than friendly. Throughout the
+            game, you will be able to choose who you want to befriend. You can even choose to befriend some of the less than friendly.
+          </div>
+        </div>
+      </div>
+      <!-- end accordion 1 -->
+      <!-- accordion 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwoChoices">
+          <button class="accordion-button collapsed bg-light text-black rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoChoices" aria-expanded="false" aria-controls="flush-collapseTwoChoices">
+            Traverse cautiously
+          </button>
+        </h2>
+        <div id="flush-collapseTwoChoices" class="accordion-collapse collapse" aria-labelledby="flush-headingTwoChoices" data-bs-parent="#accordionFlushChoices">
+          <div class="accordion-body">Pumpkin in the Forest has multiple endings, some of which are dictated
+            by the paths you choose. Whether you go left, right, or center could determine whether or not
+            you find your way home.
+          </div>
+        </div>
+      </div>
+      <!-- end accordion 2 -->
+      <!-- accordion 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThreeChoices">
+          <button class="accordion-button collapsed bg-light text-black rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeChoices" aria-expanded="false" aria-controls="flush-collapseThreeChoices">
+            Optional quests
+          </button>
+        </h2>
+        <div id="flush-collapseThreeChoices" class="accordion-collapse collapse" aria-labelledby="flush-headingThreeChoices" data-bs-parent="#accordionFlushChoices">
+          <div class="accordion-body">Every critter in the forest - as well as on the outskirts - has something to say...
+            some even have quests. These quests may result in obtaining items that are otherwise unobtainable.
+          </div>
+        </div>
+      </div>
+      <!-- end accordion 3 -->
+      <!-- accordion 4 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFourChoices">
+          <button class="accordion-button collapsed bg-light text-black rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFourChoices" aria-expanded="false" aria-controls="flush-collapseFourChoices">
+            More replay-ability!
+          </button>
+        </h2>
+        <div id="flush-collapseFourChoices" class="accordion-collapse collapse" aria-labelledby="flush-headingFourChoices" data-bs-parent="#accordionFlushChoices">
+          <div class="accordion-body">Given the above options, there is a lot of variety and different combinations that can
+            be made for your unique playthrough of Pumpkin in the Forest. If you have the interest in learning
+            all the possible endings, each playthrough has the potential to be unique, keeping engagement and furthering
+            elements that are not as surface-level.
+          </div>
+        </div>
+      </div>
+      <!-- end accordion 4 -->
+    </div>
 
     <!-- new one (scrapped)
       <div class="container">

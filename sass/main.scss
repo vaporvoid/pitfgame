@@ -6,25 +6,29 @@ $warning: #866544;
 
 // centered navbar - with help from codingyaar.com ("Bootstrap Navbar With Logo Centered Above Navbar")
 .navbar .navbar-nav .nav-link {
-    color: #000000;
-    font-size: 1.1em;
+  color: #000000;
+  font-size: 1.1em;
 }
+
 @media only screen and (min-width: 992px) {
   .navbar {
     flex-direction: column;
   }
+
   // .navbar .navbar-nav {
   //   border-bottom: 2px solid #000;
   // }
+
   .navbar .nav-item {
     padding: 0.5em 1em;
   }
 }
+
 .navbar .navbar-nav {
   margin-top: 0.001em;
 }
 
-.navbar-toggler-icon{
+.navbar-toggler-icon {
   transform: scale(1, 1);
   width: auto;
 }
@@ -53,38 +57,51 @@ $warning: #866544;
 h1 {
   font-weight: 500;
   font-family: 'Dosis', sans-serif;
-  letter-spacing:0.05em;
+  letter-spacing: 0.05em;
 }
-h2,h3,h4,h6 {
+
+h2,
+h3,
+h4,
+h6 {
   font-family: 'SignikaNegative', sans-serif;
 }
-h5, .btn {
+
+h5,
+.btn {
   font-weight: 900;
   font-family: 'Dosis', sans-serif;
 }
-p, a, div, li {
+
+p,
+a,
+div,
+li {
   font-family: 'SignikaNegative', sans-serif;
 }
 
 // rollover image effect from sirv.com
-    .figure {
-        position: relative;
-        width: 360px; /* can be omitted for a regular non-lazy image */
-        max-width: 100%;
-    }
-    .figure img.image-hover {
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 0;
-      object-fit: contain;
-      opacity: 0;
-      transition: opacity .2s;
-    }
-    .figure:hover img.image-hover {
-      opacity: 1;
-    }
+.figure {
+  position: relative;
+  width: 360px;
+  /* can be omitted for a regular non-lazy image */
+  max-width: 100%;
+}
+
+.figure img.image-hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity .2s;
+}
+
+.figure:hover img.image-hover {
+  opacity: 1;
+}
 
 // character card / costume dimensions
 .char-card {
@@ -104,28 +121,29 @@ p, a, div, li {
 }
 
 // accordion colors
-$accordion-padding-y:                     1rem;
-$accordion-padding-x:                     1.25rem;
-$accordion-color:                         #e2d0be; // text & icon color
-$accordion-bg:                            #cfbeac; // expanded textbox bg color
+$accordion-padding-y: 1rem;
+$accordion-padding-x: 1.25rem;
+$accordion-color: #e2d0be; // text & icon color
+$accordion-bg: #cfbeac; // expanded textbox bg color
 
-$accordion-button-color:                  $accordion-color;
-$accordion-button-bg:                     #866544;
-$accordion-button-active-bg:              tint-color(component-active-bg, 90%);
-$accordion-button-active-color:           $accordion-color;
+$accordion-button-color: $accordion-color;
+$accordion-button-bg: #866544;
+$accordion-button-active-bg: tint-color(component-active-bg, 90%);
+$accordion-button-active-color: $accordion-color;
 
-$accordion-button-focus-border-color:     #000;
-$accordion-button-focus-box-shadow:       btn-focus-box-shadow;
+$accordion-button-focus-border-color: #000;
+$accordion-button-focus-box-shadow: btn-focus-box-shadow;
 
 
 
 // anchor hoverover color
 a {
-    -webkit-transition: color 1s;
-    transition: color .5s!important;
+  -webkit-transition: color 1s;
+  transition: color .5s !important;
 }
+
 a:hover {
-    color: #f28f10!important;
+  color: #f28f10 !important;
 }
 
 // remove dark background color for button
@@ -135,45 +153,48 @@ a:hover {
 
 // carousel
 .carousel {
-    position: relative;
-  }
-  
-  .carousel.pointer-event {
-    touch-action: pan-y;
-  }
-  
-  .carousel-inner {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-  }
-  .carousel-inner::after {
-    display: block;
-    clear: both;
-    content: "";
-  }
-  
-  .carousel-item {
-    position: relative;
-    display: none;
-    float: left;
-    width: 100%;
-    margin-right: -100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    transition: transform 0.6s ease-in-out;
-  }
+  position: relative;
+}
+
+.carousel.pointer-event {
+  touch-action: pan-y;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.carousel-item {
+  position: relative;
+  display: none;
+  float: left;
+  width: 100%;
+  margin-right: -100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: transform 0.6s ease-in-out;
+}
 
 // button text
-.button,.btn {
-    font-family: "Verdana";
-    }
+.button,
+.btn {
+  font-family: "Verdana";
+}
 
 // meet.html profiles
 .left-pfp {
   width: 15%;
   float: left;
 }
+
 .right-pfp {
   width: 15%;
   float: right;
@@ -183,12 +204,15 @@ a:hover {
 .width28percent {
   width: 28%;
 }
+
 .width24percent {
   width: 24%;
 }
+
 .width20percent {
   width: 20%;
 }
+
 .img-border {
   border: 5px solid #5c3e1f;
 }
@@ -204,9 +228,8 @@ a:hover {
 @import '../node_modules/bootstrap/scss/_variables';
 
 // create and add custom colors
-$custom-theme-colors: (
-    "altprimary": brown,
-    "altlight": brown,
+$custom-theme-colors: ("altprimary": brown,
+  "altlight": brown,
 );
 
 $theme-colors: map-merge($custom-theme-colors, $theme-colors);
